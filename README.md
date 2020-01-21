@@ -17,3 +17,7 @@ This is an extremely basic script demoing aioxmpp's sending XMPP messages betwee
 ### Bonus
 
 For tons of other awesome ready-to-use examples made, check [this](https://github.com/horazont/aioxmpp/tree/devel/examples) page.
+
+## License
+
+LGPL v3 from upstream
