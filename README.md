@@ -5,6 +5,11 @@ A simple pipenv project demoing how to send messages between two JIDs via XMPP u
 ### What does this do
 This is an extremely basic script demoing aioxmpp's sending XMPP messages between two JIDs. You'll need to edit the `bot-config.ini` file and change the JIDs for sender and recipient, also configure the local JID's password and an XMPP message (could also be a command). Once the configuration is done, simply running the demo will just send the configured message from the local JID to the recipient's JID.
 
+### Prerequisites
+* Pipenv (to manage dependencies)
+* Two JIDs from a server (get them from a self-hosted XMPP server instance or pick one provider from [here](https://xmpp.org/software/servers.html) and register with them.
+* (Optional) Make sure the server supports stream management and better security features (use of privacy lists only, encryption, XEP etc)
+
 ### Instructions
 * Clone this repo (or download it as a zip)
 * Make sure [pipenv](https://pypi.org/project/pipenv/) is installed
