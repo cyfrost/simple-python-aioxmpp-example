@@ -101,7 +101,7 @@ class Example(metaclass=abc.ABCMeta):
         if self.args.config is not None:
             with self.args.config:
                 self.config.read_file(self.args.config)
-                print(self.config.get("global", "xmpp_command"))
+                # print(self.config.get("global", "xmpp_command"))
 
         if self.config.has_option("global", "logging"):
             logging.config.fileConfig(
@@ -182,7 +182,7 @@ class Example(metaclass=abc.ABCMeta):
             pin_store=pin_store,
             pin_type=pin_type,
             anonymous=anonymous,
-            no_verify=no_verify,
+            no_verify=True,
         )
 
     def make_simple_client(self):
