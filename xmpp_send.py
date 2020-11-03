@@ -1,10 +1,10 @@
 import asyncio
 import aioxmpp
+import aioxmpp.dispatcher
 import configparser
 from framework import Example, exec_example
 
 class SendMessage(Example):
-    @asyncio.coroutine
     def run_simple_example(self):
         recipient = self.config.get("global", "xmpp_slave_jid")
         msgData = self.config.get("global", "xmpp_command")
